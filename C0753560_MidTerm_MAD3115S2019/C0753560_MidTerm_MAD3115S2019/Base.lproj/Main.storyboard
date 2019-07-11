@@ -49,7 +49,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <state key="normal" title="Log In"/>
                                 <connections>
-                                    <action selector="btn_login:" destination="tAp-4P-54s" eventType="touchUpInside" id="9oS-9K-qrB"/>
+                                    <action selector="btn_login:" destination="tAp-4P-54s" eventType="touchUpInside" id="uJu-xN-2SI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -57,9 +57,10 @@
                         <viewLayoutGuide key="safeArea" id="SfS-fl-JCh"/>
                     </view>
                     <connections>
-                        <outlet property="switch_rememberMe" destination="R3h-fX-sPq" id="eZ0-Fw-lLJ"/>
+                        <outlet property="switch_rememberMe" destination="R3h-fX-sPq" id="6sm-ry-JiF"/>
+                        <outlet property="txt_emailID" destination="khx-Rh-bEK" id="eYz-pM-6IN"/>
                         <outlet property="txt_emialID" destination="khx-Rh-bEK" id="6Fw-b8-6JK"/>
-                        <outlet property="txt_password" destination="FRU-Mu-q3x" id="LHp-eP-Ygq"/>
+                        <outlet property="txt_password" destination="FRU-Mu-q3x" id="jcM-Td-pu0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cNx-Kh-DRW" sceneMemberID="firstResponder"/>
