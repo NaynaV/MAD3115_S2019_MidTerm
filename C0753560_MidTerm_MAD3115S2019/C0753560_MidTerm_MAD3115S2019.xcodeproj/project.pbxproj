@@ -28,6 +28,7 @@
 		EB7D44FD22D825F100FD69B2 /* countryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D44FC22D825F100FD69B2 /* countryType.swift */; };
 		EB7D44FF22D826A600FD69B2 /* CustomerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D44FE22D826A600FD69B2 /* CustomerError.swift */; };
 		EB7D450322D82C3300FD69B2 /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450222D82C3300FD69B2 /* CustomerListViewController.swift */; };
+		EB7D450522D8EFAF00FD69B2 /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450422D8EFAF00FD69B2 /* BillListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		EB7D44FC22D825F100FD69B2 /* countryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = countryType.swift; sourceTree = "<group>"; };
 		EB7D44FE22D826A600FD69B2 /* CustomerError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerError.swift; sourceTree = "<group>"; };
 		EB7D450222D82C3300FD69B2 /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
+		EB7D450422D8EFAF00FD69B2 /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				EB7D44DE22D8052F00FD69B2 /* UserInfo.plist */,
 				EB7D44E522D81F5A00FD69B2 /* studentData.swift */,
 				EB7D450222D82C3300FD69B2 /* CustomerListViewController.swift */,
+				EB7D450422D8EFAF00FD69B2 /* BillListTableViewController.swift */,
 			);
 			path = C0753560_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				EB7D44F122D8239500FD69B2 /* Mobile.swift in Sources */,
 				EB7D44F922D8247400FD69B2 /* extension_float.swift in Sources */,
 				EB7D44F322D823B300FD69B2 /* Customer.swift in Sources */,
+				EB7D450522D8EFAF00FD69B2 /* BillListTableViewController.swift in Sources */,
 				EB7D44ED22D8237F00FD69B2 /* Hydro.swift in Sources */,
 				EB7D44E422D81D1500FD69B2 /* StringExtexnsions.swift in Sources */,
 				EB7D44FD22D825F100FD69B2 /* countryType.swift in Sources */,
