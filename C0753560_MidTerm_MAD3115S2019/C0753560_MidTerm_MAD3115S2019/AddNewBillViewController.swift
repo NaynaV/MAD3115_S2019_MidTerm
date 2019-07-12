@@ -61,14 +61,15 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     
     func date_picker()
     {
-        let toolbar1:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 88))
+        let toolbar1:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
         let done:UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target:self, action: Selector(("doneBtnClicked:")))
         done.tag  = 201
         let cancel:UIBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: Selector(("cancelBtnClicked:")))
         cancel.tag = 202
         let space:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
         toolbar1.items = [cancel,space,done]
-        toolbar1.barTintColor = UIColor(red: 174/255.0, green: 134/255.0, blue: 9/255.0, alpha: 1)
+     //   toolbar1.barTintColor = UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
+        toolbar1.barTintColor = UIColor(red: 36/255.0, green: 94/255.0, blue: 160/255.0, alpha: 1)
         toolbar1.tintColor = UIColor.black
         txt_billDatePicker.inputAccessoryView = toolbar1
         
@@ -84,7 +85,7 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         datePicker.timeZone = NSTimeZone.local
         datePicker.locale = NSLocale.current
         datePicker.calendar = NSCalendar.current
-        datePicker.backgroundColor = UIColor(red: 255/255.0, green: 193/255.0, blue: 37/255.0, alpha: 1)
+        datePicker.backgroundColor = UIColor(red: 126/255.0, green: 174/255.0, blue: 229/255.0, alpha: 1)
         txt_billDatePicker.inputView = datePicker
         //        txtCaseassignstarttime.inputView = datePicker
         //        txtCasereachabletime.inputView = datePicker
