@@ -24,6 +24,7 @@
 		EB7D44F522D823F300FD69B2 /* extension_date.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D44F422D823F300FD69B2 /* extension_date.swift */; };
 		EB7D44F722D8241800FD69B2 /* IDisplay.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D44F622D8241800FD69B2 /* IDisplay.swift */; };
 		EB7D44F922D8247400FD69B2 /* extension_float.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D44F822D8247400FD69B2 /* extension_float.swift */; };
+		EB7D44FB22D824BA00FD69B2 /* BillType.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D44FA22D824BA00FD69B2 /* BillType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		EB7D44F422D823F300FD69B2 /* extension_date.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_date.swift; sourceTree = "<group>"; };
 		EB7D44F622D8241800FD69B2 /* IDisplay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IDisplay.swift; sourceTree = "<group>"; };
 		EB7D44F822D8247400FD69B2 /* extension_float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extension_float.swift; sourceTree = "<group>"; };
+		EB7D44FA22D824BA00FD69B2 /* BillType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillType.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				EB7D44F422D823F300FD69B2 /* extension_date.swift */,
 				EB7D44F622D8241800FD69B2 /* IDisplay.swift */,
 				EB7D44F822D8247400FD69B2 /* extension_float.swift */,
+				EB7D44FA22D824BA00FD69B2 /* BillType.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				EB7D44EF22D8238D00FD69B2 /* Internet.swift in Sources */,
 				EB7D44E622D81F5A00FD69B2 /* studentData.swift in Sources */,
 				EB7D44CB22D7FCD200FD69B2 /* LoginViewController.swift in Sources */,
+				EB7D44FB22D824BA00FD69B2 /* BillType.swift in Sources */,
 				EB7D44E922D822FD00FD69B2 /* User.swift in Sources */,
 				EB7D44F722D8241800FD69B2 /* IDisplay.swift in Sources */,
 				EB7D44EB22D8234A00FD69B2 /* Bill.swift in Sources */,

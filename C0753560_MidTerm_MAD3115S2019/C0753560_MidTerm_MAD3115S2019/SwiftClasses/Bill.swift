@@ -44,3 +44,4 @@ class Bill : IDisplay
         return total
 }
     
+}
