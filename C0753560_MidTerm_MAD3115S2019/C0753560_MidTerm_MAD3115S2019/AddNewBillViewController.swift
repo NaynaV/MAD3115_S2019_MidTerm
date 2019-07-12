@@ -46,9 +46,9 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     
     @IBAction func btn_save(_ sender: Any)
     {
-        
+       
     }
-    
+  
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if(textField == txt_billDatePicker)
         {
@@ -90,20 +90,18 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         //        txtCaseassignstarttime.inputView = datePicker
         //        txtCasereachabletime.inputView = datePicker
     }
-    func donedatePicker(){
-        //For date formate
+    @objc func donedatePicker(){
+        
         let formatter = DateFormatter()
         formatter.dateFormat = "dd/MM/yyyy"
         txt_billDatePicker.text = formatter.string(from: datePicker.date)
-        //dismiss date picker dialog
         self.view.endEditing(true)
     }
-    /*
-    func cancelDatePicker(){
-        //cancel button dismiss datepicker dialog
+    
+    @objc func cancelDatePicker(){
         self.view.endEditing(true)
     }
-    */
+    
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
