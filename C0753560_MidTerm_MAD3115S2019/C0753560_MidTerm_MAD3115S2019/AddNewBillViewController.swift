@@ -8,10 +8,27 @@
 
 import UIKit
 
-class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavigationControllerDelegate,UITextFieldDelegate,UIActionSheetDelegate {
-
+class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavigationControllerDelegate,UITextFieldDelegate,UIActionSheetDelegate,UIPickerViewDelegate, UIPickerViewDataSource {
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+  
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+         return pickerData[row]
+    }
     @IBOutlet weak var txt_billType: UITextField!
     @IBOutlet weak var txt_billDatePicker: UITextField!
+    
+    @IBOutlet weak var picker_billType: UIPickerView!
+    
+    var pickerData: [String] = [String]()
+    
     
     var datePicker = UIDatePicker()
     var rdate  = NSDate()
@@ -19,7 +36,12 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     var Response2: AnyObject!
     
     var Response1: AnyObject!
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
+        
+        self.picker_billType.delegate = self
+        self.picker_billType.dataSource = self
+    pickerData = ["Elecricity", "Hydro", "Mobile"]
         super.viewDidLoad()
 //showDatePicker()
         // Do any additional setup after loading the view.

@@ -326,6 +326,7 @@
                         <viewLayoutGuide key="safeArea" id="at3-xL-bK7"/>
                     </view>
                     <connections>
+                        <outlet property="picker_billType" destination="PIJ-Gk-NgN" id="6fD-xh-9sE"/>
                         <outlet property="txt_billDatePicker" destination="t5q-az-SN9" id="NfE-FY-Z90"/>
                         <outlet property="txt_billType" destination="hmZ-xz-v31" id="Wn7-xZ-VdZ"/>
                     </connections>
