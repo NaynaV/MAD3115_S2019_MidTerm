@@ -47,6 +47,13 @@ class LoginViewController: UIViewController
     @IBAction func btn_login(_ sender: Any)
     {
         
+       
+    }
+    
+    
+    @IBAction func btn_loginclick(_ sender: Any)
+    {
+        
         if let email = txt_emailID.text{
             if !email.isEmpty{
                 
@@ -56,7 +63,7 @@ class LoginViewController: UIViewController
                             if password.sizeCheck(){
                                 
                                 if  checkEmailPassword(email: email, password: password) {
-                                      setRememberMe()
+                                    setRememberMe()
                                     
                                     let storyboard = UIStoryboard(name: "Main", bundle: nil)
                                     let dashboardVC = storyboard.instantiateViewController(withIdentifier: "customerListVC") as! CustomerListViewController
@@ -84,7 +91,9 @@ class LoginViewController: UIViewController
                 showAlerBox(msg: "Please enter useremail")
             }
         }
+        
     }
+    
         func showAlerBox(msg : String)  {
             let alertController = UIAlertController(title: "CustomerBillApp", message:
                 msg, preferredStyle: .alert)

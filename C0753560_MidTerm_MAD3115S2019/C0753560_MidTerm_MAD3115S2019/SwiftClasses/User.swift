@@ -32,7 +32,7 @@ import Foundation
         
         static func addCustomer(customer : Customer)
         {
-            customers.updateValue(customer, forKey: customer.customerid)
+            customers.updateValue(customer, forKey: customer.customerId)
             print("Added customer in User Class")
         }
         
