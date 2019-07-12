@@ -34,11 +34,7 @@ class LoginViewController: UIViewController
         
     }
    
-    @IBAction func btn_login(_ sender: Any)
-    {
-        
-       
-    }
+   
     
     
     @IBAction func btn_loginclick(_ sender: Any)

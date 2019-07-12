@@ -27,7 +27,12 @@ extension String
             let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
             return emailTest.evaluate(with: self)
         }
-    
+    func isValidMobile() -> Bool
+    {
+        let mobileRegEx = "^[1{1}]\\s\\d{3}-\\d{3}-\\d{4}$"
+        let mobileTest = NSPredicate(format:"SELF MATCHES %@", mobileRegEx)
+        return mobileTest.evaluate(with: self)
+    }
     
     
         func sizeCheck() -> Bool{

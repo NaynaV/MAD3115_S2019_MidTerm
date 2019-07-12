@@ -9,24 +9,16 @@
 import UIKit
 
 class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavigationControllerDelegate,UITextFieldDelegate,UIActionSheetDelegate,UIPickerViewDelegate, UIPickerViewDataSource {
-    func numberOfComponents(in pickerView: UIPickerView) -> Int {
-        return 1
-    }
-    
-    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
-        return pickerData.count
-    }
-    
-  
-    
-    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
-         return pickerData[row]
-    }
+   
     @IBOutlet weak var txt_billType: UITextField!
     @IBOutlet weak var txt_billDatePicker: UITextField!
     
     @IBOutlet weak var picker_billType: UIPickerView!
     
+    @IBOutlet weak var txt_mobileNo: UITextField!
+    @IBOutlet weak var txt_companyName: UITextField!
+    
+    @IBOutlet weak var txt_billAmount: UITextField!
     var pickerData: [String] = [String]()
     
     
@@ -45,6 +37,19 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         super.viewDidLoad()
 //showDatePicker()
         // Do any additional setup after loading the view.
+    }
+    
+    @IBAction func btn_back(_ sender: Any)
+    {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let dashboardVC = storyboard.instantiateViewController(withIdentifier: "BillListVC") as! BillListTableViewController
+        
+        self.navigationController?.pushViewController(dashboardVC, animated: true)
+    }
+    
+    @IBAction func btn_save(_ sender: Any)
+    {
+        
     }
     
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
@@ -101,6 +106,20 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         self.view.endEditing(true)
     }
     */
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerData.count
+    }
+    
+    
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerData[row]
+    }
     @IBAction func txt_BillDateClick(_ sender: Any)
     {
     self.date_picker()
