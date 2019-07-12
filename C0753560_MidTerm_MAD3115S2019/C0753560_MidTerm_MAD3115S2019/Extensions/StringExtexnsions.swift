@@ -16,5 +16,18 @@ extension String
         let emailTest = NSPredicate(format:"SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: self)
     }
+    
+    
+    func countryCode(countryType:CountryType) -> String
+    {
+        if(countryType == CountryType.Canada)
+        {
+            return "+1\(self)"
+        }
+        else
+        {
+            return "+91\(self)"
+        }
+    }
 }
 
