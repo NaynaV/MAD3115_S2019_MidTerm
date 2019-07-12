@@ -21,8 +21,8 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     @IBOutlet weak var txt_billAmount: UITextField!
     var pickerData: [String] = [String]()
     
-    
-    var datePicker = UIDatePicker()
+     let datePicker = UIDatePicker()
+   // var datePicker = UIDatePicker()
     var rdate  = NSDate()
     var rtime = NSTimeZone()
     var Response2: AnyObject!
@@ -30,7 +30,7 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     var Response1: AnyObject!
     override func viewDidLoad()
     {
-        
+        showDatePicker()
         self.picker_billType.delegate = self
         self.picker_billType.dataSource = self
         
@@ -58,44 +58,31 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if(textField == txt_billDatePicker)
         {
-            self.date_picker()
+          //  self.date_picker()
             return true
         }
         
         return false
     }
    
-    func date_picker()
-    {
-        let toolbar1:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
-        let done:UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target:self, action: Selector(("doneBtnClicked:")))
-        done.tag  = 201
-        let cancel:UIBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: Selector(("cancelBtnClicked:")))
-        cancel.tag = 202
-        let space:UIBarButtonItem = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
-        toolbar1.items = [cancel,space,done]
-     //   toolbar1.barTintColor = UIColor(red: <#T##CGFloat#>, green: <#T##CGFloat#>, blue: <#T##CGFloat#>, alpha: <#T##CGFloat#>)
-        toolbar1.barTintColor = UIColor(red: 36/255.0, green: 94/255.0, blue: 160/255.0, alpha: 1)
-        toolbar1.tintColor = UIColor.black
-        txt_billDatePicker.inputAccessoryView = toolbar1
+    func showDatePicker(){
+        //Formate Date
+        datePicker.datePickerMode = .date
         
-        cancel.tintColor = UIColor.black
-        done.tintColor = UIColor.black
-        //        txtCaseassignstarttime.inputAccessoryView = toolbar1
-        //        txtCasereachabletime.inputAccessoryView = toolbar1
+        //ToolBar
+        let toolbar = UIToolbar();
+        toolbar.sizeToFit()
+        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: #selector(donedatePicker));
+        let spaceButton = UIBarButtonItem(barButtonSystemItem: UIBarButtonItem.SystemItem.flexibleSpace, target: nil, action: nil)
+        let cancelButton = UIBarButtonItem(title: "Cancel", style: .plain, target: self, action: #selector(cancelDatePicker));
         
-        datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200))
-        datePicker.date = NSDate() as Date
-        datePicker.maximumDate = NSDate() as Date
-        datePicker.datePickerMode = UIDatePicker.Mode.date
-        datePicker.timeZone = NSTimeZone.local
-        datePicker.locale = NSLocale.current
-        datePicker.calendar = NSCalendar.current
-        datePicker.backgroundColor = UIColor(red: 126/255.0, green: 174/255.0, blue: 229/255.0, alpha: 1)
+        toolbar.setItems([doneButton,spaceButton,cancelButton], animated: false)
+        
+        txt_billDatePicker.inputAccessoryView = toolbar
         txt_billDatePicker.inputView = datePicker
-        //        txtCaseassignstarttime.inputView = datePicker
-        //        txtCasereachabletime.inputView = datePicker
+        
     }
+    
     @objc func donedatePicker(){
         
         let formatter = DateFormatter()
@@ -107,8 +94,6 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     @objc func cancelDatePicker(){
         self.view.endEditing(true)
     }
-    
-    
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
         return 1
     }
@@ -128,7 +113,7 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     }
     @IBAction func txt_BillDateClick(_ sender: Any)
     {
-    self.date_picker()
+  //  self.date_picker()
     }
     
     
