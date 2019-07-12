@@ -41,10 +41,7 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     
     @IBAction func btn_back(_ sender: Any)
     {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let dashboardVC = storyboard.instantiateViewController(withIdentifier: "BillListVC") as! BillListTableViewController
-        
-        self.navigationController?.pushViewController(dashboardVC, animated: true)
+       self.performSegue(withIdentifier: "goBackBillDetail", sender: nil)
     }
     
     @IBAction func btn_save(_ sender: Any)

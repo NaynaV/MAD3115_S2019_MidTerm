@@ -44,10 +44,22 @@ class BillListTableViewController: UIViewController,  UITableViewDelegate, UITab
         self.performSegue(withIdentifier: "goToAddNewBill", sender: nil)
     }
   
+    @IBAction func btn_backClick(_ sender: UIBarButtonItem)
+    {
+         self.performSegue(withIdentifier: "goBack", sender: nil)
+    
+    }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Customer.activeCustomer.billDictionary.count
     }
+    
+    @IBAction func btn_back(_ sender: Any)
+    {
+        
+        
+    }
+    
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "idBill")  as! UITableViewCell
