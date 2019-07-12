@@ -60,6 +60,14 @@
                                     <segue destination="Cre-Fd-eeg" kind="show" id="NzB-Fl-k0M"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="images-3" translatesAutoresizingMaskIntoConstraints="NO" id="tNi-Ad-pUE">
+                                <rect key="frame" x="76" y="344" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="icons8-password-48" translatesAutoresizingMaskIntoConstraints="NO" id="Ek3-XE-kik">
+                                <rect key="frame" x="76" y="401" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.93553934699999997" green="0.90837917540000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="oro-fc-GyT"/>
@@ -407,6 +415,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="icons8-password-48" width="48" height="48"/>
+        <image name="images-3" width="200" height="202"/>
         <image name="login-icon" width="220" height="220"/>
     </resources>
 </document>
