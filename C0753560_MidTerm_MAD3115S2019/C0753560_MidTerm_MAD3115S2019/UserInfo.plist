@@ -1,14 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<!--
-   UserInfo.plist
-   C0753560_MidTerm_MAD3115S2019
-
-   Created by Nayna on 7/11/19.
-   Copyright (c) 2019 Nayna. All rights reserved.
--->
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-    <dict>
-    
-    </dict>
+<dict>
+	<key>Users</key>
+	<array>
+		<dict>
+			<key>userID</key>
+			<string>2</string>
+			<key>userName</key>
+			<string>Shivani</string>
+			<key>userEmailID</key>
+			<string>shivani@gmail.com</string>
+			<key>userPassword</key>
+			<string>shivani123</string>
+		</dict>
+		<dict>
+			<key>userID</key>
+			<string>3</string>
+			<key>userName</key>
+			<string>Karan</string>
+			<key>userEmailID</key>
+			<string>karan@gmail.com</string>
+			<key>userPassword</key>
+			<string>karan123</string>
+		</dict>
+		<dict>
+			<key>userID</key>
+			<string>4</string>
+			<key>userName</key>
+			<string>Jazz</string>
+			<key>userEmailID</key>
+			<string>jazz@gmail.com</string>
+			<key>userPassword</key>
+			<string>jazz123</string>
+		</dict>
+		<dict>
+			<key>userID</key>
+			<string>5</string>
+			<key>userName</key>
+			<string>Parth</string>
+			<key>userEmailID</key>
+			<string>parth@gmail.com</string>
+			<key>userPassword</key>
+			<string>parth123</string>
+		</dict>
+		<dict>
+			<key>userID</key>
+			<integer>1</integer>
+			<key>userName</key>
+			<string>Naina</string>
+			<key>userEmailID</key>
+			<string>naina@gmail.com</string>
+			<key>userPassword</key>
+			<string>naina123</string>
+		</dict>
+	</array>
+</dict>
 </plist>
