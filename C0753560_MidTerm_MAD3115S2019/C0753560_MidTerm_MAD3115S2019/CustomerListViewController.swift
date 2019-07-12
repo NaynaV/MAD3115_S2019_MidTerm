@@ -15,6 +15,11 @@ class CustomerListViewController: UIViewController,UITableViewDelegate , UITable
 var customerArray = Array<Customer>()
     @IBOutlet weak var tbl_users: UITableView!
     
+    @IBAction func btn_logout(_ sender: Any)
+    {
+      self.performSegue(withIdentifier: "LogoutS", sender: nil)
+    
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
