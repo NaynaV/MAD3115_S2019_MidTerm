@@ -6,7 +6,7 @@
 	<array>
 		<dict>
 			<key>userID</key>
-			<string>2</string>
+			<integer>2</integer>
 			<key>userName</key>
 			<string>Shivani</string>
 			<key>email</key>
@@ -16,7 +16,7 @@
 		</dict>
 		<dict>
 			<key>userID</key>
-			<string>3</string>
+			<integer>3</integer>
 			<key>userName</key>
 			<string>Karan</string>
 			<key>email</key>
@@ -26,17 +26,17 @@
 		</dict>
 		<dict>
 			<key>userID</key>
-			<string>4</string>
+			<integer>4</integer>
 			<key>userName</key>
 			<string>Jazz</string>
 			<key>email</key>
-			<string>jazz@gmail.com</string>
+			<string>Jazz@gmail.com</string>
 			<key>password</key>
 			<string>jazz123</string>
 		</dict>
 		<dict>
 			<key>userID</key>
-			<string>5</string>
+			<integer>5</integer>
 			<key>userName</key>
 			<string>Parth</string>
 			<key>email</key>
@@ -50,7 +50,7 @@
 			<key>userName</key>
 			<string>Naina</string>
 			<key>email</key>
-			<string>naina@gmail.com</string>
+			<string>Naina@gmail.com</string>
 			<key>password</key>
 			<string>naina123</string>
 		</dict>

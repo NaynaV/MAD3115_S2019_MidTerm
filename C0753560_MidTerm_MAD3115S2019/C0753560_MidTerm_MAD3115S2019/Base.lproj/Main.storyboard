@@ -49,6 +49,7 @@
                                 <state key="normal" title="Log In"/>
                                 <connections>
                                     <action selector="btn_login:" destination="BfF-Xq-jwc" eventType="touchUpInside" id="1gk-Q1-XdB"/>
+                                    <segue destination="Cre-Fd-eeg" kind="show" id="gaX-zz-XXq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -65,29 +66,49 @@
             </objects>
             <point key="canvasLocation" x="1565.217391304348" y="34.151785714285715"/>
         </scene>
-        <!--View Controller-->
+        <!--Customer List View Controller-->
         <scene sceneID="hkj-nY-LRo">
             <objects>
-                <viewController id="Cre-Fd-eeg" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="customerListVC" id="Cre-Fd-eeg" customClass="CustomerListViewController" customModule="C0753560_MidTerm_MAD3115S2019" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AMZ-Hg-Nb4">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QOR-xP-Sk0">
-                                <rect key="frame" x="175" y="164" width="37" height="21"/>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mW5-me-Bqh">
+                                <rect key="frame" x="29" y="53" width="365" height="809"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="usersCell" rowHeight="107" id="0rF-Wp-9At">
+                                        <rect key="frame" x="0.0" y="28" width="365" height="107"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0rF-Wp-9At" id="uno-fk-45S">
+                                            <rect key="frame" x="0.0" y="0.0" width="365" height="106.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnv-sV-nIL">
+                                                    <rect key="frame" x="44" y="43" width="34" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="0cI-Ln-Mvw"/>
                     </view>
+                    <connections>
+                        <outlet property="tbl_users" destination="mW5-me-Bqh" id="de9-1l-lWC"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0mq-Bn-dzh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2240.5797101449275" y="17.410714285714285"/>
+            <point key="canvasLocation" x="2362.3188405797105" y="11.383928571428571"/>
         </scene>
     </scenes>
 </document>
