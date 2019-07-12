@@ -37,8 +37,8 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     
     func date_picker()
     {
-        let toolbar1:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 66))
-        let done:UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target:self, action: Selector(("cancelBtnClicked:")))
+        let toolbar1:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 88))
+        let done:UIBarButtonItem = UIBarButtonItem(title: "Done", style: UIBarButtonItem.Style.plain, target:self, action: Selector(("doneBtnClicked:")))
         done.tag  = 201
         let cancel:UIBarButtonItem = UIBarButtonItem(title: "Cancel", style: UIBarButtonItem.Style.plain, target: self, action: Selector(("cancelBtnClicked:")))
         cancel.tag = 202
@@ -53,7 +53,7 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         //        txtCaseassignstarttime.inputAccessoryView = toolbar1
         //        txtCasereachabletime.inputAccessoryView = toolbar1
         
-        datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
+        datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 200))
         datePicker.date = NSDate() as Date
         datePicker.maximumDate = NSDate() as Date
         datePicker.datePickerMode = UIDatePicker.Mode.date
@@ -73,12 +73,12 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         //dismiss date picker dialog
         self.view.endEditing(true)
     }
-    
+    /*
     func cancelDatePicker(){
         //cancel button dismiss datepicker dialog
         self.view.endEditing(true)
     }
-    
+    */
     @IBAction func txt_BillDateClick(_ sender: Any)
     {
     self.date_picker()
