@@ -32,22 +32,32 @@ var customerArray = Array<Customer>()
         
         //Creating Customer Objects
         
-        let cust1: Customer = Customer(customerId: 1, firstName: "Neeraj", lastName: "Prasher", email: "Prasher.neeraj99@gmail.com")
+        let cust1: Customer = Customer(customerId: "1", firstName: "Naina", lastName: "Vaghasiya", email: "naina@gmail.com")
         
         cust1.billDictionary[1] = b1
         cust1.billDictionary[2] = b3
         
-        let cust2: Customer = Customer(customerId: 2, firstName: "Kartik", lastName: "Prasher", email: "Prasher.kp@gmail.com")
+        let cust2: Customer = Customer(customerId: "2", firstName: "Karan", lastName: "Kundan", email: "Karan@gmail.com")
         
         cust2.billDictionary[1] = b2
         cust2.billDictionary[2] = b6
         cust2.billDictionary[3] = b5
         
-        let cust3: Customer = Customer(customerId: 3, firstName: "Vipul", lastName: "Garg", email: "vipul.garg@gmail.com")
+        let cust3: Customer = Customer(customerId: "3", firstName: "Vipul", lastName: "Garg", email: "vipul.garg@gmail.com")
         
         cust3.billDictionary[1] = b4
         
-        customerArray = [cust1, cust2, cust3]
+        
+        let cust4: Customer = Customer(customerId: "4", firstName: "Shivani", lastName: "Dhiman", email: "Shivani18@gmail.com")
+        
+        cust4.billDictionary[1] = b3
+        
+        
+        let cust5: Customer = Customer(customerId: "5", firstName: "Jazz", lastName: "Patel", email: "Jazz123@gmail.com")
+        
+        cust5.billDictionary[1] = b6
+        
+        customerArray = [cust1, cust2, cust3, cust4, cust5]
         self.tbl_users.delegate = self
         self.tbl_users.dataSource = self
         // Do any additional setup after loading the view.

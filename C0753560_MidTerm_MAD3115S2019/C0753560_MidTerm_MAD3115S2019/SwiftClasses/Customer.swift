@@ -12,7 +12,7 @@ import Foundation
 class Customer
 {
     static var activeCustomer = Customer()
-    var customerId : Int
+    var customerId : String
     var firstName : String
     var lastName: String
     
@@ -35,12 +35,12 @@ class Customer
         return TotalAmount
     }
     init(){
-        self.customerId = Int()
+        self.customerId = String()
         self.firstName = String()
         self.lastName = String()
         self.email = String()
     }
-    init(customerId: Int, firstName: String, lastName: String, email: String)
+    init(customerId: String, firstName: String, lastName: String, email: String)
     {
         self.customerId = customerId
         self.firstName = firstName

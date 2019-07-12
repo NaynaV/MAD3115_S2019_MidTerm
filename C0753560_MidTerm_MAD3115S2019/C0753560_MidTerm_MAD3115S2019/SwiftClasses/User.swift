@@ -30,12 +30,12 @@ import Foundation
             self.password = password
         }
         
-        static func addCustomer(customer : Customer)
+     /*   static func addCustomer(customer : Customer)
         {
             customers.updateValue(customer, forKey: customer.customerId)
             print("Added customer in User Class")
         }
-        
+    */
         static func deleteCustomer(customerId : Int)
         {
             customers.removeValue(forKey: customerId)

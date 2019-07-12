@@ -106,7 +106,7 @@
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" red="0.93553934699999997" green="0.90837917540000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
-                                            <segue destination="Idl-nF-Zgz" kind="showDetail" id="8h4-bz-heK"/>
+                                            <segue destination="Idl-nF-Zgz" kind="showDetail" identifier="GoToDetailS" id="8h4-bz-heK"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -229,7 +229,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="221" id="buG-Sf-5Ee">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="idBill" rowHeight="221" id="buG-Sf-5Ee">
                                         <rect key="frame" x="0.0" y="28" width="385" height="221"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="buG-Sf-5Ee" id="rD2-K0-ZB1">
@@ -252,6 +252,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="ECS-b8-i4E"/>
                     </view>
+                    <connections>
+                        <outlet property="lbl_customerEmail" destination="mei-12-FTq" id="YUA-DD-AGn"/>
+                        <outlet property="lbl_customerID" destination="3Xy-a7-NLv" id="QvA-Ke-4oa"/>
+                        <outlet property="lbl_customerName" destination="7WF-OQ-omE" id="2Vu-T7-cIa"/>
+                        <outlet property="lbl_totalBill" destination="JYA-3x-5NK" id="e7w-MJ-Flt"/>
+                        <outlet property="tbl_billdetails" destination="Cjl-Ku-y7o" id="RW8-cy-5f0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7ya-6J-vuR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
