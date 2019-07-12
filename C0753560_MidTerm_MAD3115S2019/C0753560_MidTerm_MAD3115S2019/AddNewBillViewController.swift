@@ -33,6 +33,11 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         
         self.picker_billType.delegate = self
         self.picker_billType.dataSource = self
+        
+        
+        
+        
+     
     pickerData = ["Elecricity", "Hydro", "Mobile"]
         super.viewDidLoad()
 //showDatePicker()
@@ -49,6 +54,7 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
        
     }
   
+ 
     func textFieldShouldBeginEditing(_ textField: UITextField) -> Bool {
         if(textField == txt_billDatePicker)
         {
@@ -58,7 +64,7 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
         
         return false
     }
-    
+   
     func date_picker()
     {
         let toolbar1:UIToolbar = UIToolbar(frame: CGRect(x: 0, y: 0, width: UIScreen.main.bounds.size.width, height: 44))
@@ -115,6 +121,10 @@ class AddNewBillViewController: UIViewController,UINavigationBarDelegate,UINavig
     
     func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
         return pickerData[row]
+    }
+    
+    func pickerView( pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        txt_billType.text = pickerData[row]
     }
     @IBAction func txt_BillDateClick(_ sender: Any)
     {
