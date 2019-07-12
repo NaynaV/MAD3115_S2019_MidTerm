@@ -8,8 +8,7 @@
 
 import Foundation
 
-class User
-{
+
     class User
     {
         static var USER_ID_COUNTER : Int = 0
@@ -43,4 +42,4 @@ class User
             print("Customer removed in User class")
         }
     }
-}
+

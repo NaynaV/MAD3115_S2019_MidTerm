@@ -9,9 +9,9 @@
 			<string>2</string>
 			<key>userName</key>
 			<string>Shivani</string>
-			<key>userEmailID</key>
+			<key>email</key>
 			<string>shivani@gmail.com</string>
-			<key>userPassword</key>
+			<key>password</key>
 			<string>shivani123</string>
 		</dict>
 		<dict>
@@ -19,9 +19,9 @@
 			<string>3</string>
 			<key>userName</key>
 			<string>Karan</string>
-			<key>userEmailID</key>
+			<key>email</key>
 			<string>karan@gmail.com</string>
-			<key>userPassword</key>
+			<key>password</key>
 			<string>karan123</string>
 		</dict>
 		<dict>
@@ -29,9 +29,9 @@
 			<string>4</string>
 			<key>userName</key>
 			<string>Jazz</string>
-			<key>userEmailID</key>
+			<key>email</key>
 			<string>jazz@gmail.com</string>
-			<key>userPassword</key>
+			<key>password</key>
 			<string>jazz123</string>
 		</dict>
 		<dict>
@@ -39,9 +39,9 @@
 			<string>5</string>
 			<key>userName</key>
 			<string>Parth</string>
-			<key>userEmailID</key>
+			<key>email</key>
 			<string>parth@gmail.com</string>
-			<key>userPassword</key>
+			<key>password</key>
 			<string>parth123</string>
 		</dict>
 		<dict>
@@ -49,9 +49,9 @@
 			<integer>1</integer>
 			<key>userName</key>
 			<string>Naina</string>
-			<key>userEmailID</key>
+			<key>email</key>
 			<string>naina@gmail.com</string>
-			<key>userPassword</key>
+			<key>password</key>
 			<string>naina123</string>
 		</dict>
 	</array>

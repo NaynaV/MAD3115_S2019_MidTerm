@@ -21,14 +21,7 @@ class LoginViewController: UIViewController
     
     override func viewDidLoad()
     {
-           if let email = UserDefaults.standard.string(forKey: "email")
-        {
-            if email != ""
-            {
-                txt_emailID.text = email
-                txt_password.text = UserDefaults.standard.string(forKey: "password")
-            }
-        }
+        studentData.readUserDataFromPlist()
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
@@ -36,85 +29,41 @@ class LoginViewController: UIViewController
    
     @IBAction func btn_login(_ sender: Any)
     {
-        if  txt_emailID.text! == ""
+        let myEmail = self.txt_emailID.text!
+        let myPassword = self.txt_password.text!
+        if let password = studentData.usersDict[myEmail]
         {
-            let alertController = UIAlertController(title: "Fill Out The Information", message: "Please Enter an Email to continue.", preferredStyle: .alert)
-            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-            alertController.addAction(action)
-            self.present(alertController, animated: true)
-        }
-        else
-        {
-            if txt_password.text! == ""
+            // User Exists
+            if(myPassword == password)
             {
-                let alertController = UIAlertController(title: "Fill Out The Information", message: "Please Enter an Password to continue.", preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alertController.addAction(action)
-                self.present(alertController, animated: true)
-            }
-            else if !txt_emailID.text!.isValidEmail
-            {
-                let alertController = UIAlertController(title: "Invalid Email", message: nil, preferredStyle: .alert)
-                let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                alertController.addAction(action)
-                self.present(alertController, animated: true)
+                // User password correct
+                let alertControl = UIAlertController(title: "Message", message: "Correct Information Entered", preferredStyle: .alert)
+                let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alertControl.addAction(actionOk)
+                self .present(alertControl , animated: true , completion: nil)
+                
             }
             else
             {
-                if switch_rememberMe.isOn
-                {
-                    UserDefaults.standard.set(txt_emailID.text!, forKey: "email")
-                    UserDefaults.standard.set(txt_password.text!, forKey: "password")
-                    
-                }
+                //user password incorrect
+                let alertControl = UIAlertController(title: "Message", message: "Incorrect Password Entered", preferredStyle: .alert)
+                let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+                alertControl.addAction(actionOk)
+                self .present(alertControl , animated: true , completion: nil)
                 
-                
-                if let userpassword = readCustomersFromPlistFile.users[txt_emailID.text!]
-                {
-                    if userpassword == txt_password.text!
-                    {
-                        DataStore.loggedInUser = txt_emailID.text!
-                       // let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                     //   let dashboardVC = storyboard.instantiateViewController(withIdentifier: "dashboardVC") as! DashboardViewController
-                      //  let navcon = UINavigationController(rootViewController: dashboardVC)
-                        
-                        //present(navcon, animated: true, completion: nil)
-                    }
-                    else
-                    {
-                        let alertController = UIAlertController(title: "Authentication Failed", message: "Password does not match with our records.", preferredStyle: .alert)
-                        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                        alertController.addAction(action)
-                        self.present(alertController, animated: true)
-                    }
-                }
-                else
-                {
-                    let alertController = UIAlertController(title: "User Does not exist", message: "User with email \"\(txt_emailID.text!)\" does not exist.", preferredStyle: .alert)
-                    let action = UIAlertAction(title: "OK", style: .default, handler: nil)
-                    alertController.addAction(action)
-                    self.present(alertController, animated: true)
-                }
             }
-            
         }
+        else
+        {
+            //User Doesnt Exist
+            let alertControl = UIAlertController(title: "Message", message: "User Does Not Exist", preferredStyle: .alert)
+            let actionOk = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alertControl.addAction(actionOk)
+            self .present(alertControl , animated: true , completion: nil)        }
     }
         }
     
-    private func getRememberMeValues()
-    {
-        let userDefault = UserDefaults.standard
-        
-        if let email = userDefault.string(forKey: "userEmailID")
-        {
-            txt_emailID.text = email
-            
-            if let pwd = userDefault.string(forKey: "userPassword")
-            {
-                txt_password.text = pwd
-                switch_rememberMe.setOn(true, animated: false)
-            }
-        }
-    }
+   
+
 
 

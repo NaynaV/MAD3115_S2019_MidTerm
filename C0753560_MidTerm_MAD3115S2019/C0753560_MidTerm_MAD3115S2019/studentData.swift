@@ -21,17 +21,18 @@ class studentData
             if let dict = NSDictionary(contentsOfFile: pList)
             {
                 // Reading User Array
-                if let users = dict["UserList"] as? [[String:Any]]
+                if let customers = dict["UserList"] as? [[String:Any]]
                 {
                     
                     //print(users)
-                    for user in users
+                    for customer in customers
                     {
-                        let myuser = User()
-                        myuser.email = user["email"] as! String
-                        myuser.password = user["password"] as! String
-                        usersArray.append(myuser)
-                        usersDict.updateValue(myuser.password, forKey: myuser.email)
+                        let myCustomer = User()
+                        
+                        myCustomer.email = customer["email"] as! String
+                        myCustomer.password = customer["password"] as! String
+                        usersArray.append(myCustomer)
+                        usersDict.updateValue(myCustomer.password, forKey: myCustomer.email)
                     }
                     
                 }
@@ -41,7 +42,7 @@ class studentData
         
     
     
-    static func displayArrayDict()
+     func displayArrayDict()
     {
         for user in usersArray
         {
@@ -50,4 +51,5 @@ class studentData
             print(user.password)
         }
     }
+}
 }

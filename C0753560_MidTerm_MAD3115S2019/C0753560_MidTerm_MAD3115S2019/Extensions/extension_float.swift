@@ -21,3 +21,4 @@ extension Float
     {
         return String(format : "%0.0f GB", self)
 }
+}
