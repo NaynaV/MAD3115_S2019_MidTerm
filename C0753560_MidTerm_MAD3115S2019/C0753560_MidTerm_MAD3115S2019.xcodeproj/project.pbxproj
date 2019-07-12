@@ -12,8 +12,7 @@
 		EB7D44CE22D7FCD200FD69B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7D44CC22D7FCD200FD69B2 /* Main.storyboard */; };
 		EB7D44D022D7FCD300FD69B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EB7D44CF22D7FCD300FD69B2 /* Assets.xcassets */; };
 		EB7D44D322D7FCD300FD69B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EB7D44D122D7FCD300FD69B2 /* LaunchScreen.storyboard */; };
-		EB7D44DB22D7FF2F00FD69B2 /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7D44DA22D7FF2F00FD69B2 /* UserInfo.plist */; };
-		EB7D44DD22D8013700FD69B2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D44DC22D8013600FD69B2 /* User.swift */; };
+		EB7D44DF22D8052F00FD69B2 /* UserInfo.plist in Resources */ = {isa = PBXBuildFile; fileRef = EB7D44DE22D8052F00FD69B2 /* UserInfo.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +23,7 @@
 		EB7D44CF22D7FCD300FD69B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EB7D44D222D7FCD300FD69B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EB7D44D422D7FCD300FD69B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EB7D44DA22D7FF2F00FD69B2 /* UserInfo.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = UserInfo.plist; path = "../../../../Downloads/MAD3115Sample-master/midtermPractise/UserInfo.plist"; sourceTree = "<group>"; };
-		EB7D44DC22D8013600FD69B2 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = User.swift; path = "../../../../Downloads/MAD3115Sample-master/midtermPractise/User.swift"; sourceTree = "<group>"; };
+		EB7D44DE22D8052F00FD69B2 /* UserInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = UserInfo.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,9 +61,8 @@
 				EB7D44CC22D7FCD200FD69B2 /* Main.storyboard */,
 				EB7D44CF22D7FCD300FD69B2 /* Assets.xcassets */,
 				EB7D44D122D7FCD300FD69B2 /* LaunchScreen.storyboard */,
-				EB7D44DA22D7FF2F00FD69B2 /* UserInfo.plist */,
 				EB7D44D422D7FCD300FD69B2 /* Info.plist */,
-				EB7D44DC22D8013600FD69B2 /* User.swift */,
+				EB7D44DE22D8052F00FD69B2 /* UserInfo.plist */,
 			);
 			path = C0753560_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -131,7 +128,7 @@
 				EB7D44D322D7FCD300FD69B2 /* LaunchScreen.storyboard in Resources */,
 				EB7D44D022D7FCD300FD69B2 /* Assets.xcassets in Resources */,
 				EB7D44CE22D7FCD200FD69B2 /* Main.storyboard in Resources */,
-				EB7D44DB22D7FF2F00FD69B2 /* UserInfo.plist in Resources */,
+				EB7D44DF22D8052F00FD69B2 /* UserInfo.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +141,6 @@
 			files = (
 				EB7D44CB22D7FCD200FD69B2 /* LoginViewController.swift in Sources */,
 				EB7D44C922D7FCD200FD69B2 /* AppDelegate.swift in Sources */,
-				EB7D44DD22D8013700FD69B2 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
