@@ -30,6 +30,7 @@
 		EB7D450322D82C3300FD69B2 /* CustomerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450222D82C3300FD69B2 /* CustomerListViewController.swift */; };
 		EB7D450522D8EFAF00FD69B2 /* BillListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450422D8EFAF00FD69B2 /* BillListTableViewController.swift */; };
 		EB7D450722D8F5FC00FD69B2 /* extensionInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450622D8F5FC00FD69B2 /* extensionInt.swift */; };
+		EB7D450922D90A4200FD69B2 /* AddNewBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7D450822D90A4200FD69B2 /* AddNewBillViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,7 @@
 		EB7D450222D82C3300FD69B2 /* CustomerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListViewController.swift; sourceTree = "<group>"; };
 		EB7D450422D8EFAF00FD69B2 /* BillListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillListTableViewController.swift; sourceTree = "<group>"; };
 		EB7D450622D8F5FC00FD69B2 /* extensionInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = extensionInt.swift; sourceTree = "<group>"; };
+		EB7D450822D90A4200FD69B2 /* AddNewBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNewBillViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				EB7D44E522D81F5A00FD69B2 /* studentData.swift */,
 				EB7D450222D82C3300FD69B2 /* CustomerListViewController.swift */,
 				EB7D450422D8EFAF00FD69B2 /* BillListTableViewController.swift */,
+				EB7D450822D90A4200FD69B2 /* AddNewBillViewController.swift */,
 			);
 			path = C0753560_MidTerm_MAD3115S2019;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 				EB7D44F722D8241800FD69B2 /* IDisplay.swift in Sources */,
 				EB7D44EB22D8234A00FD69B2 /* Bill.swift in Sources */,
 				EB7D44F522D823F300FD69B2 /* extension_date.swift in Sources */,
+				EB7D450922D90A4200FD69B2 /* AddNewBillViewController.swift in Sources */,
 				EB7D44C922D7FCD200FD69B2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
