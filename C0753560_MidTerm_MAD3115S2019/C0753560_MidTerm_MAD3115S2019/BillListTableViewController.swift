@@ -39,7 +39,12 @@ class BillListTableViewController: UIViewController,  UITableViewDelegate, UITab
         self.lbl_customerName.text = Customer.activeCustomer.fullName
         self.lbl_totalBill.text = Customer.activeCustomer.TotalAmountToPay.currency()
     }
-
+    
+    @IBAction func btn_addNewItem(_ sender: Any) {
+        self.performSegue(withIdentifier: "goToAddNewBill", sender: nil)
+    }
+  
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return Customer.activeCustomer.billDictionary.count
     }
